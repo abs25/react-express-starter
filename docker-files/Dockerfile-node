@@ -1,0 +1,6 @@
+FROM node:12-stretch-slim
+WORKDIR /opt/led-pi
+
+COPY ./ /opt/led-pi
+RUN yarn install
+
