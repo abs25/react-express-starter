@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "outDir": "./dist",
+    "baseUrl": "./modules",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "jsx": "react",
+    "sourceMap": true,
+    "rootDir": ".",
+    "strict": true
+  },
+
+  "exclude": ["./dist"]
+}
