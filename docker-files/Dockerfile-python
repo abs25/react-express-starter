@@ -1,0 +1,10 @@
+FROM python:3.8-slim
+WORKDIR /opt/led-pi/light-server
+RUN apt-get update && apt-get install -y \
+    build-essential
+
+COPY ./light-server/.requirements.txt requirements.txt
+RUN pip install -r requirements.txt
+COPY ./light-server/* ./
+
+CMD ["python", "test.py"]
