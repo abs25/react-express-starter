@@ -66,6 +66,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "virtual:a8eaecbae9092a8038a2470f00652bde898287b9d16e85b0e5c121e8b47dfdc9626259ce8b7d35b13c6d3f3cca0a91ddaf5d897a9813375c1a7b300bf3078da6#npm:16.13.1"
       ],
       [
+        "ts-loader",
+        "virtual:a8eaecbae9092a8038a2470f00652bde898287b9d16e85b0e5c121e8b47dfdc9626259ce8b7d35b13c6d3f3cca0a91ddaf5d897a9813375c1a7b300bf3078da6#npm:7.0.3"
+      ],
+      [
         "ts-node",
         "virtual:a8eaecbae9092a8038a2470f00652bde898287b9d16e85b0e5c121e8b47dfdc9626259ce8b7d35b13c6d3f3cca0a91ddaf5d897a9813375c1a7b300bf3078da6#npm:8.9.1"
       ],
@@ -98,6 +102,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.0.5"],
             ["react", "npm:16.13.1"],
             ["react-dom", "virtual:a8eaecbae9092a8038a2470f00652bde898287b9d16e85b0e5c121e8b47dfdc9626259ce8b7d35b13c6d3f3cca0a91ddaf5d897a9813375c1a7b300bf3078da6#npm:16.13.1"],
+            ["ts-loader", "virtual:a8eaecbae9092a8038a2470f00652bde898287b9d16e85b0e5c121e8b47dfdc9626259ce8b7d35b13c6d3f3cca0a91ddaf5d897a9813375c1a7b300bf3078da6#npm:7.0.3"],
             ["ts-node", "virtual:a8eaecbae9092a8038a2470f00652bde898287b9d16e85b0e5c121e8b47dfdc9626259ce8b7d35b13c6d3f3cca0a91ddaf5d897a9813375c1a7b300bf3078da6#npm:8.9.1"],
             ["typescript", "patch:typescript@npm%3A3.8.3#builtin<compat/typescript>::version=3.8.3&hash=8cac75"],
             ["webpack", "npm:4.43.0"],
@@ -932,6 +937,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["snapdragon-node", "npm:2.1.1"],
             ["split-string", "npm:3.1.0"],
             ["to-regex", "npm:3.0.2"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:3.0.2", {
+          "packageLocation": "./.yarn/cache/braces-npm-3.0.2-782240b28a-3.zip/node_modules/braces/",
+          "packageDependencies": [
+            ["braces", "npm:3.0.2"],
+            ["fill-range", "npm:7.0.1"]
           ],
           "linkType": "HARD",
         }]
@@ -2055,6 +2068,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["to-regex-range", "npm:2.1.1"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:7.0.1", {
+          "packageLocation": "./.yarn/cache/fill-range-npm-7.0.1-b8b1817caa-3.zip/node_modules/fill-range/",
+          "packageDependencies": [
+            ["fill-range", "npm:7.0.1"],
+            ["to-regex-range", "npm:5.0.1"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["finalhandler", [
@@ -2808,6 +2829,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["kind-of", "npm:3.2.2"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:7.0.0", {
+          "packageLocation": "./.yarn/cache/is-number-npm-7.0.0-060086935c-3.zip/node_modules/is-number/",
+          "packageDependencies": [
+            ["is-number", "npm:7.0.0"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["is-plain-object", [
@@ -3033,6 +3061,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.0.5"],
             ["react", "npm:16.13.1"],
             ["react-dom", "virtual:a8eaecbae9092a8038a2470f00652bde898287b9d16e85b0e5c121e8b47dfdc9626259ce8b7d35b13c6d3f3cca0a91ddaf5d897a9813375c1a7b300bf3078da6#npm:16.13.1"],
+            ["ts-loader", "virtual:a8eaecbae9092a8038a2470f00652bde898287b9d16e85b0e5c121e8b47dfdc9626259ce8b7d35b13c6d3f3cca0a91ddaf5d897a9813375c1a7b300bf3078da6#npm:7.0.3"],
             ["ts-node", "virtual:a8eaecbae9092a8038a2470f00652bde898287b9d16e85b0e5c121e8b47dfdc9626259ce8b7d35b13c6d3f3cca0a91ddaf5d897a9813375c1a7b300bf3078da6#npm:8.9.1"],
             ["typescript", "patch:typescript@npm%3A3.8.3#builtin<compat/typescript>::version=3.8.3&hash=8cac75"],
             ["webpack", "npm:4.43.0"],
@@ -3241,6 +3270,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["regex-not", "npm:1.0.2"],
             ["snapdragon", "npm:0.8.2"],
             ["to-regex", "npm:3.0.2"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:4.0.2", {
+          "packageLocation": "./.yarn/cache/micromatch-npm-4.0.2-f059c00e51-3.zip/node_modules/micromatch/",
+          "packageDependencies": [
+            ["micromatch", "npm:4.0.2"],
+            ["braces", "npm:3.0.2"],
+            ["picomatch", "npm:2.2.2"]
           ],
           "linkType": "HARD",
         }]
@@ -3907,6 +3945,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["picomatch", [
+        ["npm:2.2.2", {
+          "packageLocation": "./.yarn/cache/picomatch-npm-2.2.2-1ce736a913-3.zip/node_modules/picomatch/",
+          "packageDependencies": [
+            ["picomatch", "npm:2.2.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["pify", [
         ["npm:4.0.1", {
           "packageLocation": "./.yarn/cache/pify-npm-4.0.1-062756097b-3.zip/node_modules/pify/",
@@ -4474,6 +4521,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["semver", "npm:5.7.1"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:6.3.0", {
+          "packageLocation": "./.yarn/cache/semver-npm-6.3.0-b3eace8bfd-3.zip/node_modules/semver/",
+          "packageDependencies": [
+            ["semver", "npm:6.3.0"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["send", [
@@ -5006,6 +5060,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["repeat-string", "npm:1.6.1"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:5.0.1", {
+          "packageLocation": "./.yarn/cache/to-regex-range-npm-5.0.1-f1e8263b00-3.zip/node_modules/to-regex-range/",
+          "packageDependencies": [
+            ["to-regex-range", "npm:5.0.1"],
+            ["is-number", "npm:7.0.0"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["toidentifier", [
@@ -5024,6 +5086,24 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["tough-cookie", "npm:2.5.0"],
             ["psl", "npm:1.8.0"],
             ["punycode", "npm:2.1.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["ts-loader", [
+        ["virtual:a8eaecbae9092a8038a2470f00652bde898287b9d16e85b0e5c121e8b47dfdc9626259ce8b7d35b13c6d3f3cca0a91ddaf5d897a9813375c1a7b300bf3078da6#npm:7.0.3", {
+          "packageLocation": "./.yarn/$$virtual/ts-loader-virtual-b1f404fb54/0/cache/ts-loader-npm-7.0.3-462ff1cab4-3.zip/node_modules/ts-loader/",
+          "packageDependencies": [
+            ["ts-loader", "virtual:a8eaecbae9092a8038a2470f00652bde898287b9d16e85b0e5c121e8b47dfdc9626259ce8b7d35b13c6d3f3cca0a91ddaf5d897a9813375c1a7b300bf3078da6#npm:7.0.3"],
+            ["chalk", "npm:2.4.2"],
+            ["enhanced-resolve", "npm:4.1.1"],
+            ["loader-utils", "npm:1.4.0"],
+            ["micromatch", "npm:4.0.2"],
+            ["semver", "npm:6.3.0"],
+            ["typescript", "patch:typescript@npm%3A3.8.3#builtin<compat/typescript>::version=3.8.3&hash=8cac75"]
+          ],
+          "packagePeers": [
+            "typescript"
           ],
           "linkType": "HARD",
         }]
