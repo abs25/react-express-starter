@@ -20,7 +20,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "LED Pi",
+      title: "React Express Starter ",
       template: "./modules/index.html",
     }),
     new CircularDependencyPlugin({

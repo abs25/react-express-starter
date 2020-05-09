@@ -1,4 +1,4 @@
-version: "3.4"
+version: "3.8"
 services:
   web:
     build:
@@ -6,7 +6,3 @@ services:
       dockerfile: docker-files/Dockerfile-node
     ports:
       - "8000:8000"
-  light-server:
-    build:
-      context: .
-      dockerfile: docker-files/Dockerfile-python
