@@ -1,5 +1,7 @@
 path = require("path");
 const PnpWebpackPlugin = require(`pnp-webpack-plugin`);
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CircularDependencyPlugin = require("circular-dependency-plugin");
 
 module.exports = {
   mode: "development",
@@ -16,6 +18,14 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+    new HtmlWebpackPlugin({ title: "LED Pi" }),
+    new CircularDependencyPlugin({
+      failOnError: true,
+      allowAsyncCycles: false,
+      cwd: process.cwd(),
+    }),
+  ],
   resolve: {
     extensions: [".tsx", ".ts", ".js"],
     plugins: [PnpWebpackPlugin],
