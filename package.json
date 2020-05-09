@@ -1,5 +1,6 @@
 {
-  "name": "led-pi",
+  "name": "ReactExpressStarter",
+  "license": "MIT",
   "scripts": {
     "build": "yarn build-client",
     "build-client": "webpack --config webpack/client.config.js",
