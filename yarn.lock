@@ -425,6 +425,32 @@ __metadata:
   languageName: node
   linkType: hard
 
+"ReactExpressStarter@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "ReactExpressStarter@workspace:."
+  dependencies:
+    "@types/circular-dependency-plugin": 5.0.0
+    "@types/express": ^4.17.6
+    "@types/nodemon": 1.19.0
+    "@types/react": ^16.9.34
+    "@types/react-dom": ^16.9.7
+    "@types/webpack": 4.41.12
+    circular-dependency-plugin: ^5.2.0
+    express: ^4.17.1
+    html-webpack-plugin: ^4.3.0
+    nodemon: ^2.0.3
+    pnp-webpack-plugin: ^1.6.4
+    prettier: ^2.0.5
+    react: ^16.13.1
+    react-dom: ^16.13.1
+    ts-loader: ^7.0.3
+    ts-node: ^8.9.1
+    typescript: ^3.8.3
+    webpack: ^4.43.0
+    webpack-cli: ^3.3.11
+  languageName: unknown
+  linkType: soft
+
 "abbrev@npm:1":
   version: 1.1.1
   resolution: "abbrev@npm:1.1.1"
@@ -3370,32 +3396,6 @@ fsevents@~2.1.2:
   checksum: 3/147695e053a0193d82eb75d199089e0563fa27773d1d3c8cbec6c7bc16edcb8bc01949a3f2e687b853999711107e9adba2f4dc266bb65f536b8ac50a5eeceaab
   languageName: node
   linkType: hard
-
-"led-pi@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "led-pi@workspace:."
-  dependencies:
-    "@types/circular-dependency-plugin": 5.0.0
-    "@types/express": ^4.17.6
-    "@types/nodemon": 1.19.0
-    "@types/react": ^16.9.34
-    "@types/react-dom": ^16.9.7
-    "@types/webpack": 4.41.12
-    circular-dependency-plugin: ^5.2.0
-    express: ^4.17.1
-    html-webpack-plugin: ^4.3.0
-    nodemon: ^2.0.3
-    pnp-webpack-plugin: ^1.6.4
-    prettier: ^2.0.5
-    react: ^16.13.1
-    react-dom: ^16.13.1
-    ts-loader: ^7.0.3
-    ts-node: ^8.9.1
-    typescript: ^3.8.3
-    webpack: ^4.43.0
-    webpack-cli: ^3.3.11
-  languageName: unknown
-  linkType: soft
 
 "loader-runner@npm:^2.4.0":
   version: 2.4.0

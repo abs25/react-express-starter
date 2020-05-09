@@ -6,3 +6,4 @@
 * TypeScript
 * Webpack to bundle frontend
 * Nodemon to hot reload Express
+* Yarn 2 (Berry)
