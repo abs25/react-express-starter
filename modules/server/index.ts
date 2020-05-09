@@ -1,10 +1,10 @@
 import * as express from "express";
 
 const app = express();
-
-app.get("/", (req, res) => {
-  res.send("Hola Home");
-});
+//
+// app.get("/", (req, res) => {
+//   res.send("Hola Home");
+// });
 
 app.use(express.static("./dist/"));
 

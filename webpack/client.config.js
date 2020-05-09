@@ -19,7 +19,10 @@ module.exports = {
     ],
   },
   plugins: [
-    new HtmlWebpackPlugin({ title: "LED Pi" }),
+    new HtmlWebpackPlugin({
+      title: "LED Pi",
+      template: "./modules/index.html",
+    }),
     new CircularDependencyPlugin({
       failOnError: true,
       allowAsyncCycles: false,
