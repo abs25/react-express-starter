@@ -1,11 +1,6 @@
-import * as express from "express";
+import express from "express";
 
 const app = express();
-
-//
-// app.get("/", (req, res) => {
-//   res.send("Hola Home");
-// });
 
 app.use(express.static("./dist/"));
 
@@ -17,4 +12,4 @@ app.get("/*", (req, res) => {
   res.sendFile(process.cwd() + "/dist/index.html");
 });
 
-app.listen(8000, () => console.log("Running server at port 8000"));
+app.listen(8001, () => console.log("Running Express server at port 8001"));

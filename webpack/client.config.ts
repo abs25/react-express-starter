@@ -1,9 +1,10 @@
-path = require("path");
+import path from "path";
+import HtmlWebpackPlugin from "html-webpack-plugin";
+import CircularDependencyPlugin from "circular-dependency-plugin";
+import webpack from "webpack";
 const PnpWebpackPlugin = require(`pnp-webpack-plugin`);
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const CircularDependencyPlugin = require("circular-dependency-plugin");
 
-module.exports = {
+const webpackConfig: webpack.Configuration = {
   mode: "development",
   entry: "./modules/client/index.tsx",
   output: {
@@ -26,6 +27,7 @@ module.exports = {
     new CircularDependencyPlugin({
       failOnError: true,
       allowAsyncCycles: false,
+      exclude: /dist|.yarn/,
       cwd: process.cwd(),
     }),
   ],
@@ -36,4 +38,16 @@ module.exports = {
   resolveLoader: {
     plugins: [PnpWebpackPlugin.moduleLoader(module)],
   },
+  devServer: {
+    host: "0.0.0.0",
+    port: 8000,
+    hot: true,
+    publicPath: "/",
+    contentBase: path.join(__dirname, "../dist/"),
+    proxy: {
+      "/something": "http://localhost:8001",
+    },
+  },
 };
+
+export default webpackConfig;

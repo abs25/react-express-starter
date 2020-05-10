@@ -2,9 +2,11 @@
   "name": "ReactExpressStarter",
   "license": "MIT",
   "scripts": {
-    "build": "yarn build-client",
-    "build-client": "webpack --config webpack/client.config.js",
-    "dev": "nodemon modules/server/index.ts"
+    "build:client": "webpack --config webpack/client.config.ts",
+    "build": "yarn build:client",
+    "dev:client": "webpack-dev-server --config webpack/client.config.ts --watch",
+    "dev:server": "nodemon modules/server/index.ts",
+    "dev": "concurrently \"yarn dev:server\" \"yarn dev:client\" -c \"cyan,yellow\""
   },
   "dependencies": {
     "express": "^4.17.1",
@@ -15,18 +17,23 @@
   },
   "devDependencies": {
     "@types/circular-dependency-plugin": "5.0.0",
+    "@types/concurrently": "^5.2.0",
     "@types/express": "^4.17.6",
     "@types/nodemon": "1.19.0",
     "@types/react": "^16.9.34",
     "@types/react-dom": "^16.9.7",
-    "@types/webpack": "4.41.12",
+    "@types/webpack": "^4.41.12",
+    "@types/webpack-dev-server": "3.10.1",
     "circular-dependency-plugin": "^5.2.0",
+    "concurrently": "^5.2.0",
+    "cross-env": "^7.0.2",
     "html-webpack-plugin": "^4.3.0",
     "nodemon": "^2.0.3",
     "pnp-webpack-plugin": "^1.6.4",
     "prettier": "^2.0.5",
     "ts-loader": "^7.0.3",
     "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.11"
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
   }
 }
